@@ -44,30 +44,49 @@ button {
     width: 30px;
     padding: 15px 0px;
 }
+@media (max-width: 1000px) {
+    .previous {
+        padding-left: 25px;
+    }
+}
 #pages {
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 #home {
     padding: 100px 75px;
-    display: block;
+    display: none;
 }
 #about {
     padding: 75px;
     display: none;
 }
-#dropdown {
-    display: inline-block;
+#education {
+    padding: 75px;
+    display: block;
+    position: relative;
 }
-#educationbttn {
-    width: 115px;
-    text-align: left;
-    border: solid white;
+#degreebttn, #certificate, #closedegree {
+    font-size: 15px;
+    height: 25px;
+}
+#degree {
+    height: auto;
+    width: 100%;
+}
+#degreemodal {
+    height: auto;
+    width: 350px;
+    padding: 125px 350px 200px 350px;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
     display: none;
 }
-#experiencebttn {
-    border: solid white;
-    display: none;
+#closedegree {
+    width: 350px;
 }
 #projects {
     display: flex;
@@ -104,3 +123,52 @@ button {
 a {
     font-size: 20px;
 }
+@media screen and (max-width: 680px) {
+    #pages {
+        display: flex;
+        flex-direction: column;
+    }
+    #home, #about, #education {
+        padding: 0px 75px
+    }
+    #projecttypes {
+        padding: 0px 45px;
+    }
+    .previous {
+        padding-left: 50px;
+    }
+    #sidebar {
+        padding-left: 150px;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+    #degreemodal {
+        padding: 500px 580px 100px 100px;
+    }
+    #education, #projects {
+        padding-bottom: 15px;
+    }
+}
+@media screen and (max-width: 760px) {
+    #degreemodal, #closedegree {
+        width: 275px;
+    }
+}
+@media screen and (max-width: 724px) {
+    #certificate {
+        width: 177px;
+    }
+}
+/* #dropdown {
+    display: inline-block;
+} */
+/* #educationbttn {
+    width: 115px;
+    text-align: left;
+    border: solid white;
+    display: none;
+}
+#experiencebttn {
+    border: solid white;
+    display: none;
+} */
