@@ -1,6 +1,6 @@
 body {
     background-color: #bed4e9;
-    font-family: 'times new roman'
+    font-family: 'times new roman';
 }
 #nav {
     display: flex;
@@ -56,7 +56,7 @@ button {
 }
 #home {
     padding: 100px 75px;
-    display: block;
+    display: none;
 }
 #about {
     padding: 75px;
