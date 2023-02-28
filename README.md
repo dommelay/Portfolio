@@ -1,1 +1,3 @@
 # Portfolio
+This was what was used
+typing jdsdshhdjjjjjjjjjjdjdjdjdjdjdjdjdjdjdjdjdjdjdjjdjdjdjdjddjdjdjdjdjjdjdjdjdjdjdjdjdjdjdjdjdj
