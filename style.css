@@ -1,5 +1,6 @@
 body {
     background-color: #bed4e9;
+    font-family: 'times new roman'
 }
 #nav {
     display: flex;
@@ -11,6 +12,7 @@ body {
 }
 button {
     font-size: 20px;
+    font-family: 'times new roman';
     border: none;
     background-color: black;
     color: white;
@@ -28,6 +30,10 @@ button {
     width: 200px;
     font-size: 20px;
     height: 90px;
+    padding-bottom: 8px;
+}
+#title {
+    font-size: 25px;
 }
 #profile {
     height: auto;
@@ -56,7 +62,7 @@ button {
 }
 #home {
     padding: 100px 75px;
-    display: none;
+    display: block;
 }
 #about {
     padding: 75px;
@@ -64,7 +70,7 @@ button {
 }
 #education {
     padding: 75px;
-    display: block;
+    display: none;
     position: relative;
 }
 #degreebttn, #certificate, #closedegree {
@@ -76,14 +82,20 @@ button {
     width: 100%;
 }
 #degreemodal {
-    height: auto;
-    width: 350px;
-    padding: 125px 350px 200px 350px;
+    height: 100%;
+    width: 100%;
+    /* padding: 125px 350px 200px 350px; */
     z-index: 1;
     position: absolute;
     top: 0;
     left: 0;
     display: none;
+}
+#modalcontent {
+    height: auto;
+    width: 350px;
+    padding-top: 125px;
+    padding-left: 350px;
 }
 #closedegree {
     width: 350px;
@@ -114,14 +126,35 @@ button {
 #projecttypes {
     padding: 100px 45px;
     align-self: center;
+    display: none;
 }
 .carousel-button {
     align-self: center;
     font-size: 25px;
     display: none;
+    width: 29.5px;
 }
 a {
     font-size: 20px;
+    font-family: 'times new roman';
+    color: black;
+    text-decoration: none;
+}
+.projectlink {
+    font-weight: bold;
+}
+/* h2, p {
+    font-weight: bold;
+} */
+@media screen and (max-width: 850px) {
+    .next {
+        padding-right: 50px;
+    }
+}
+@media screen and (max-width: 760px) {
+    #modalcontent, #closedegree {
+        width: 300px;
+    }
 }
 @media screen and (max-width: 680px) {
     #pages {
@@ -134,23 +167,29 @@ a {
     #projecttypes {
         padding: 0px 45px;
     }
-    .previous {
-        padding-left: 50px;
+    .previous  {
+        padding-left: 25px;
+    }
+    .next {
+        padding-right: 25px;
     }
     #sidebar {
-        padding-left: 150px;
+        padding: 30px 0px 10px 0px;
+        /* padding-left: 150px;
         padding-top: 30px;
-        padding-bottom: 10px;
+        padding-bottom: 10px; */
+        width: 100%;
+        align-items: center;
     }
-    #degreemodal {
-        padding: 500px 580px 100px 100px;
+    #modalcontent {
+        padding-top: 500px;
+        padding-left: 65px;
+        align-self: center;
     }
     #education, #projects {
         padding-bottom: 15px;
     }
-}
-@media screen and (max-width: 760px) {
-    #degreemodal, #closedegree {
+    #modalcontent, #closedegree {
         width: 275px;
     }
 }
@@ -159,10 +198,10 @@ a {
         width: 177px;
     }
 }
-/* #dropdown {
+#dropdown {
     display: inline-block;
-} */
-/* #educationbttn {
+} 
+#educationbttn {
     width: 115px;
     text-align: left;
     border: solid white;
@@ -171,4 +210,4 @@ a {
 #experiencebttn {
     border: solid white;
     display: none;
-} */
+}
