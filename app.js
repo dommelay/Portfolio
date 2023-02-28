@@ -28,6 +28,16 @@ $(() => {
         $('#projects').show()
         $('#projecttypes').css('display', 'block')
     }
+    const education = () => {
+        $('#education').css('display', 'block')
+        $('#home').css('display', 'none')
+        $('#about').css('display', 'none')
+        $('#projects').hide()
+        $('#project2').css('display', 'none')
+        $('#project3').css('display', 'none')
+        $('#project4').css('display', 'none')
+        projectIndex = 0
+    }
     const degree = () => {
         $('#degreemodal').css('display', 'block').css('background-color', 'rgb(0, 0, 0, 0.4)')
         // $('body').css('background-color', 'rgb(0, 0, 0, 0.4)')
@@ -70,16 +80,6 @@ $(() => {
     //     $('#educationbttn').css('display', 'none')
     //     $('#experiencebttn').css('display', 'none')
     // }
-    const education = () => {
-        $('#education').css('display', 'block')
-        $('#home').css('display', 'none')
-        $('#about').css('display', 'none')
-        $('#projects').hide()
-        $('#project2').css('display', 'none')
-        $('#project3').css('display', 'none')
-        $('#project4').css('display', 'none')
-        projectIndex = 0
-    }
     $('#homebttn').on('click', home)
     $('#aboutbttn').on('click', about)
     $('#projectsbttn').on('click', projects)

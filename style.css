@@ -23,7 +23,6 @@ button {
     width: 20%;
     display: flex;
     flex-direction: column;
-    /* border: solid black; */
     padding: 60px 75px;
 }
 #name {
@@ -49,11 +48,6 @@ button {
     height: auto;
     width: 30px;
     padding: 15px 0px;
-}
-@media (max-width: 1000px) {
-    .previous {
-        padding-left: 25px;
-    }
 }
 #pages {
     display: flex;
@@ -84,7 +78,6 @@ button {
 #degreemodal {
     height: 100%;
     width: 100%;
-    /* padding: 125px 350px 200px 350px; */
     z-index: 1;
     position: absolute;
     top: 0;
@@ -143,9 +136,14 @@ a {
 .projectlink {
     font-weight: bold;
 }
-/* h2, p {
-    font-weight: bold;
-} */
+.resumesection {
+    text-decoration: underline;
+}
+@media (max-width: 1000px) {
+    .previous {
+        padding-left: 25px;
+    }
+}
 @media screen and (max-width: 850px) {
     .next {
         padding-right: 50px;
