@@ -51,6 +51,21 @@ $(() => {
     const degreeclose = () => {
         $('#degreemodal').css('display', 'none')
     }
+    const portfolio = () => {
+        $('#portfoliomodal').css('display', 'block').css('background-color', 'rgb(0, 0, 0, 0.4)')
+        $('.pic1').css('display', 'block')
+        portfolioIndex = 0
+    }
+    const closeportfolio = () => {
+        $('#portfoliomodal').css('display', 'none')
+        $('.pic2').css('display', 'none')
+        $('.pic3').css('display', 'none')
+        $('.pic4').css('display', 'none')
+        $('.pic5').css('display', 'none')
+        $('.pic6').css('display', 'none')
+        $('.pic7').css('display', 'none')
+        $('.pic8').css('display', 'none')
+    }
     let projectIndex = 0
     $ptypes = $('#projecttypes')
     const numProjects = $ptypes.children().length - 1
@@ -72,6 +87,28 @@ $(() => {
         }
         $ptypes.children().eq(projectIndex).css('display', 'block')
     }
+    let portfolioIndex = 0
+    $pics = $('#carouselpics')
+    const numPics = $pics.children().length - 1
+    const next1 = () => {
+        $pics.children().eq(portfolioIndex).css('display', 'none')
+       if (portfolioIndex < numPics) {
+        portfolioIndex ++
+       } else {
+        portfolioIndex = 0
+       }
+       $pics.children().eq(portfolioIndex).css('display', 'block')
+    }
+    const previous1 = () => {
+        $pics.children().eq(portfolioIndex).css('display', 'none')
+        if (portfolioIndex > 0) {
+            portfolioIndex --
+        } else {
+            portfolioIndex = numPics 
+        }
+        $pics.children().eq(portfolioIndex).css('display', 'block')
+    }
+
     // const resumedrop = () => {
     //     $('#educationbttn').css('display', 'block')
     //     $('#experiencebttn').css('display', 'block')
@@ -90,7 +127,12 @@ $(() => {
     $('#resumebttn').on('click', education)
     $('.projectlink').on('mouseover', underline)
     $('.projectlink').on('mouseleave', removeunderline)
+    $('.next1').on('click', next1)
+    $('.previous1').on('click', previous1)
+    $('#portfoliobttn').on('click', portfolio)
+    $('#closeportfolio').on('click', closeportfolio)
     // $('#dropdown').on('mouseover', resumedrop)
     // $('#dropdown').on('click', resumeup)
 })
+//object-fit: cover;
 

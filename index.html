@@ -8,6 +8,12 @@
     <script src="app.js" charset="utf-8"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <title>Dominique Clark</title>
 </head>
 <body>
@@ -71,13 +77,36 @@
         <button id="degreebttn">Bachelor's Degree</button>
         <h2 class="resumesection">Experience</h2>
         <h3>Freelance Model - 2022</h3>
-        <p>Walked in over 20 runway shows for multiple designers inluding Puma</p>
-        <p>Participated in various photoshoots for testing and also promotional and fashion modeling</p>
+        <p>Walked in over 20 runway shows for multiple designers inluding Puma<br><br>Participated in various photoshoots for testing and also promotional and fashion modeling</p>
+        <button id="portfoliobttn">Modeling Portfolio</button>
     </div>
     <div id ="degreemodal">
         <div id="modalcontent">
             <img id="degree" src="degree.jpeg">
             <button id="closedegree">Close</button>
+        </div>
+    </div>
+    <div id="portfoliomodal">
+        <div id="portfoliomodalcontent">
+            <div class="cbutton previous1">
+                <span class="lnr lnr-arrow-left-circle"></span>
+            </div>
+            <div id="carouselpics">
+                <img class="carouselpic pic1" src="image00001.jpeg">
+                <img class="carouselpic pic2" src="image00003.jpeg">
+                <img class="carouselpic pic3" src="image00006.jpeg">
+                <img class="carouselpic pic4" src="IMG-6763.jpg">
+                <img class="carouselpic pic5" src="image00002.jpeg">
+                <img class="carouselpic pic6" src="image00005.jpeg">
+                <img class="carouselpic pic7" src="image00007.jpeg">
+                <!-- <img class="carouselpic pic8" src="image00008.jpeg"> -->
+            </div>
+            <div class="cbutton next1">
+                <span class="lnr lnr-arrow-right-circle"></span>
+            </div>
+        </div>
+        <div id="closeport">
+            <button id="closeportfolio">Close</button>
         </div>
     </div>
     <div id="projects">
@@ -112,6 +141,6 @@
     </div>
 </div> 
 </div>
-    
+ 
 </body>
 </html>

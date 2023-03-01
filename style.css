@@ -1,6 +1,9 @@
 body {
     background-color: #bed4e9;
-    font-family: 'times new roman';
+    font-family: 'times new romans';
+}
+p {
+    font-size: 17px;
 }
 #nav {
     display: flex;
@@ -64,10 +67,10 @@ button {
 }
 #education {
     padding: 75px;
-    display: none;
+    display: block;
     position: relative;
 }
-#degreebttn, #certificate, #closedegree {
+#degreebttn, #certificate, #closedegree, #portfoliobttn {
     font-size: 15px;
     height: 25px;
 }
@@ -86,12 +89,12 @@ button {
 }
 #modalcontent {
     height: auto;
-    width: 350px;
-    padding-top: 125px;
-    padding-left: 350px;
+    width: 450px;
+    padding-top: 100px;
+    padding-left: 200px;
 }
 #closedegree {
-    width: 350px;
+    width: 450px;
 }
 #projects {
     display: flex;
@@ -149,11 +152,11 @@ a {
         padding-right: 50px;
     }
 }
-@media screen and (max-width: 760px) {
+/* @media screen and (max-width: 760px) {
     #modalcontent, #closedegree {
         width: 300px;
     }
-}
+} */
 @media screen and (max-width: 680px) {
     #pages {
         display: flex;
@@ -173,9 +176,6 @@ a {
     }
     #sidebar {
         padding: 30px 0px 10px 0px;
-        /* padding-left: 150px;
-        padding-top: 30px;
-        padding-bottom: 10px; */
         width: 100%;
         align-items: center;
     }
@@ -194,9 +194,80 @@ a {
 @media screen and (max-width: 724px) {
     #certificate {
         width: 177px;
+        text-align: left;
     }
 }
-#dropdown {
+.cbutton {
+    display: flex;
+    font-size: 25px;
+    width: 69.5;
+    padding: 0px 20px;
+    height: 500px;
+    background-color: #bed4e9;
+    align-items: center;
+}
+.next1 {
+    padding-left: 25px;
+}
+.previous1, .next1 {
+    align-self: center;
+}
+.carouselpic {
+    width: 350px;
+    height: 500px;
+    object-fit: contain;
+    background-color: #bed4e9;
+}
+#portfoliomodalcontent {
+    display: flex;
+    flex-direction: row;
+    padding-left: 175px;
+    padding-top: 50px;
+    width: 494px;
+}
+#portfoliomodal {
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    display: none;
+    height: 100%;
+}
+#closeport {
+    padding-top: 5px;
+    padding-left: 175px;
+}
+#closeportfolio {
+    width: 494px;
+    font-size: 17px;
+    height: 25px;
+}
+.pic1 {
+    display: block;
+}
+.pic2 {
+    display: none;
+}
+.pic3 {
+    display: none;
+}
+.pic4 {
+    display: none;
+}
+.pic5 {
+    display: none;
+}
+.pic6 {
+    display: none;
+}
+.pic7 {
+    display: none;
+}
+.pic8 {
+    display: none;
+}
+/* #dropdown {
     display: inline-block;
 } 
 #educationbttn {
@@ -208,4 +279,4 @@ a {
 #experiencebttn {
     border: solid white;
     display: none;
-}
+} */
