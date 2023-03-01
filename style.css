@@ -59,7 +59,7 @@ button {
 }
 #home {
     padding: 100px 75px;
-    display: none;
+    display: block;
 }
 #about {
     padding: 75px;
@@ -67,7 +67,7 @@ button {
 }
 #education {
     padding: 75px;
-    display: block;
+    display: none;
     position: relative;
 }
 #degreebttn, #certificate, #closedegree, #portfoliobttn {
@@ -142,61 +142,6 @@ a {
 .resumesection {
     text-decoration: underline;
 }
-@media (max-width: 1000px) {
-    .previous {
-        padding-left: 25px;
-    }
-}
-@media screen and (max-width: 850px) {
-    .next {
-        padding-right: 50px;
-    }
-}
-/* @media screen and (max-width: 760px) {
-    #modalcontent, #closedegree {
-        width: 300px;
-    }
-} */
-@media screen and (max-width: 680px) {
-    #pages {
-        display: flex;
-        flex-direction: column;
-    }
-    #home, #about, #education {
-        padding: 0px 75px
-    }
-    #projecttypes {
-        padding: 0px 45px;
-    }
-    .previous  {
-        padding-left: 25px;
-    }
-    .next {
-        padding-right: 25px;
-    }
-    #sidebar {
-        padding: 30px 0px 10px 0px;
-        width: 100%;
-        align-items: center;
-    }
-    #modalcontent {
-        padding-top: 500px;
-        padding-left: 65px;
-        align-self: center;
-    }
-    #education, #projects {
-        padding-bottom: 15px;
-    }
-    #modalcontent, #closedegree {
-        width: 275px;
-    }
-}
-@media screen and (max-width: 724px) {
-    #certificate {
-        width: 177px;
-        text-align: left;
-    }
-}
 .cbutton {
     display: flex;
     font-size: 25px;
@@ -239,7 +184,7 @@ a {
     padding-left: 175px;
 }
 #closeportfolio {
-    width: 494px;
+    width: 488px;
     font-size: 17px;
     height: 25px;
 }
@@ -266,6 +211,78 @@ a {
 }
 .pic8 {
     display: none;
+}
+@media (max-width: 1000px) {
+    .previous {
+        padding-left: 25px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .next {
+        padding-right: 50px;
+    }
+}
+@media screen and (max-width: 680px) {
+    #pages {
+        display: flex;
+        flex-direction: column;
+    }
+    #home, #about, #education {
+        padding: 0px 75px
+    }
+    #projecttypes {
+        padding: 0px 40px;
+    }
+    .previous  {
+        padding-left: 25px;
+    }
+    .next {
+        padding-right: 25px;
+    }
+    #sidebar {
+        padding: 30px 0px 10px 0px;
+        width: 100%;
+        align-items: center;
+    }
+    #modalcontent {
+        padding-top: 500px;
+        padding-left: 40px;
+        align-self: center;
+    }
+    #education, #projects {
+        padding-bottom: 15px;
+    }
+    #modalcontent, #closedegree {
+        width: 300px;
+    }
+    #portfoliomodalcontent {
+        padding-left: 40px;
+        padding-top: 550px;
+        width: 190px;
+    }
+    #closeport {
+        padding-left: 40px;
+    }
+    #closeportfolio {
+        width: 300px;
+    }
+    .carouselpic {
+        width: 190px;
+        height: 300px;
+    }
+    .cbutton {
+        height: 300px;
+    }
+    .next1, .previous1 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+@media screen and (max-width: 724px) {
+    #certificate {
+        width: 177px;
+        text-align: left;
+    }
 }
 /* #dropdown {
     display: inline-block;
