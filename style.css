@@ -222,6 +222,12 @@ a {
         padding-right: 50px;
     }
 }
+@media screen and (max-width: 724px) {
+    #certificate {
+        width: 177px;
+        text-align: left;
+    }
+}
 @media screen and (max-width: 680px) {
     #pages {
         display: flex;
@@ -277,11 +283,8 @@ a {
         padding-left: 15px;
         padding-right: 15px;
     }
-}
-@media screen and (max-width: 724px) {
     #certificate {
-        width: 177px;
-        text-align: left;
+        width: 170px;
     }
 }
 /* #dropdown {

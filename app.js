@@ -40,7 +40,6 @@ $(() => {
     }
     const degree = () => {
         $('#degreemodal').css('display', 'block').css('background-color', 'rgb(0, 0, 0, 0.4)')
-        // $('body').css('background-color', 'rgb(0, 0, 0, 0.4)')
     }
     const underline = () => {
         $('a').css('text-decoration', 'underline')
@@ -108,15 +107,6 @@ $(() => {
         }
         $pics.children().eq(portfolioIndex).css('display', 'block')
     }
-
-    // const resumedrop = () => {
-    //     $('#educationbttn').css('display', 'block')
-    //     $('#experiencebttn').css('display', 'block')
-    // }
-    // const resumeup = () => {
-    //     $('#educationbttn').css('display', 'none')
-    //     $('#experiencebttn').css('display', 'none')
-    // }
     $('#homebttn').on('click', home)
     $('#aboutbttn').on('click', about)
     $('#projectsbttn').on('click', projects)
@@ -131,8 +121,15 @@ $(() => {
     $('.previous1').on('click', previous1)
     $('#portfoliobttn').on('click', portfolio)
     $('#closeportfolio').on('click', closeportfolio)
-    // $('#dropdown').on('mouseover', resumedrop)
-    // $('#dropdown').on('click', resumeup)
 })
-//object-fit: cover;
+    // const resumedrop = () => {
+    //     $('#educationbttn').css('display', 'block')
+    //     $('#experiencebttn').css('display', 'block')
+    // }
+    // const resumeup = () => {
+    //     $('#educationbttn').css('display', 'none')
+    //     $('#experiencebttn').css('display', 'none')
+    // }
+  // $('#dropdown').on('mouseover', resumedrop)
+    // $('#dropdown').on('click', resumeup)
 
